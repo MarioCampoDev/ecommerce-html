@@ -84,6 +84,24 @@ body {
     height: 50px;
 }
 
+.secondary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.secondary-button:hover {
+    background-color: var(--hospital-green);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
 .new-password {
     margin-top: 14px;
     margin-bottom: 30px;
@@ -93,4 +111,59 @@ body {
     .logo {
         display: block;
     }
+
+    .secondary-button {
+        width: inherit;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+.form-container-send {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-image img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+.form-container-login {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.form-container-login a {
+    text-align: center;
+    color: var(--hospital-green);
+    text-decoration: none;
+    font-size: var(--sm);
+    margin-bottom: 52px;
 }
