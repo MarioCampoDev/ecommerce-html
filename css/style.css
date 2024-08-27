@@ -124,9 +124,12 @@ body {
         bottom: 20px;
     }
 
-    .edit-account-button:after {
-        content: "Save";
+    .edit-my-account-button {
+        width: 300px;
+        position: absolute;
+        bottom: 20px;
     }
+
 }
 
 .form-container-send {
@@ -193,4 +196,22 @@ body {
 .input-email-address,
 .input-password {
     margin-bottom: 20px;
+}
+
+.form-container-edit-my-account {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.account-value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+.edit-my-account-button {
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
 }
